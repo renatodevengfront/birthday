@@ -13,15 +13,84 @@
     />
 
     <link rel="stylesheet" href="styles/main.scss" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header class="logo">
       <div class="container">
-        <img class="logo__initial" src="./images/logo.jpg" alt="37 years" />
-        <p class="logo__text">Meu aniversário começa em 6 meses 12h 20m 15s</p>
+        <img class="logo__initial" src="./images/logo1.jpg" alt="37 years" />
+        <p class="logo__text">
+          Meu aniversário começa em <span id="contador"></span>
+        </p>
+        <div class="infos-bar">
+          <ul class="infos-bar__infos">
+            <li class="infos-bar__infos__item">
+              <b>Localização</b>
+              Av. Anhanguera - Setor Sul - Goiânia-Go
+            </li>
+            <li class="infos-bar__infos__item">
+              <b>Convite</b>
+              Livre apenas para amigos
+            </li>
+            <li class="infos-bar__infos__item">
+              <b>Quando</b>
+              11/08/2024 às 19hrs
+            </li>
+          </ul>
+          <a href="#" class="button button--primary"> Retire aqui </a>
+        </div>
       </div>
     </header>
 
+    <section class="event event--bebidas">
+      <div class="container" data-aos="fade-right">
+        <div class="event__details">
+          <h2 class="event__details__title">Bebidas</h2>
+          <p class="event__details__description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem
+            dolorum alias vitae? Blanditiis, rem enim nisi quae at similique
+            sequi alias pariatur excepturi ullam, reprehenderit porro laudantium
+            iure assumenda et!
+          </p>
+        </div>
+        <img class="event__image" src="./images/bebidas.jpg" alt="Bebidas" />
+      </div>
+    </section>
+
+    <section class="event event--doces event--image-left">
+      <div class="container" data-aos="fade-left">
+        <div class="event__details">
+          <h2 class="event__details__title">Doces</h2>
+          <p class="event__details__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+            quaerat aperiam nisi asperiores corporis, nobis eaque, cumque
+            eveniet quam culpa quasi ipsam velit nihil sed, sequi cupiditate
+            facilis labore facere.
+          </p>
+        </div>
+        <img class="event__image" src="./images/doces.jpg" alt="Doces" />
+      </div>
+    </section>
+
+    <section class="event event--presentes">
+      <div class="container" data-aos="fade-right">
+        <div class="event__details">
+          <h2 class="event__details__title">Presentes</h2>
+          <p class="event__details__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi soluta voluptates, culpa 
+            explicabo maiores sed vel, corrupti inventore molestias fuga, modi voluptas magni 
+            perspiciatis blanditiis illum ratione? Laboriosam, ex nemo!
+          </p>
+        </div>
+        <img
+          class="event__image"
+          src="./images/presentes.jpg"
+          alt="Presentes"
+        />
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
   </body>
 </html>
